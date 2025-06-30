@@ -1,35 +1,41 @@
-.DS_Store
-
-application/cache/*
-!application/cache/index.html
-
-application/logs/*
-!application/logs/index.html
-
-!application/*/.htaccess
-
-composer.lock
-tests/mocks/database/ci_test.sqlite
-
-user_guide_src/build/*
-user_guide_src/cilexer/build/*
-user_guide_src/cilexer/dist/*
-user_guide_src/cilexer/pycilexer.egg-info/*
+# Ignore composer vendor folder if using Composer for other dependencies
 /vendor/
 
-# IDE Files
-#-------------------------
-/nbproject/
-.idea/*
+# Environment files
+.env
 
-## Sublime Text cache files
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
+# Logs and cache
+/application/logs/*
+/application/cache/*
+!application/logs/index.html
+!application/cache/index.html
+
+# IDE/editor files
+.idea/
+.vscode/
 *.sublime-project
-/tests/tests/
-/tests/results/
+*.sublime-workspace
 
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-.system
+# Node modules (if you use frontend tools)
+node_modules/
+
+# Build output folders (if you use any frontend build tools)
+dist/
+public/js/
+public/css/
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.swp
+
+# PHPUnit and test results
+phpunit.xml
+phpunit.xml.dist
+coverage/
