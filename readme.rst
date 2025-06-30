@@ -10,7 +10,8 @@ Features
 - View message history and status
 - Manage contacts and groups
 
-Installation
+
+Installation 
 ------------
 1. Clone the repository:
 
